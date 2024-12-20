@@ -1,0 +1,121 @@
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: silver;
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.Rows {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: silver;
+    font-size: 50px;
+} 
+    
+nav a {
+    display: block;
+    color: silver; 
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+
+}
+
+nav a:hover {
+    background-color: #555; 
+ }
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px; 
+}
+.card-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 40px; 
+}
+    
+h1{
+    text-align: center;
+    margin-top:55px ;
+    font-size: 25px;
+    font-family:  Helvetica, sans-serif;
+    color:silver;
+    padding: 15px;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  border: 10px solid #323232;
+  perspective: 1000px; /* For 3D effect */
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #656565;
+  text-align: center;
+  font-size: 40px;
+}
+
+.card-back {
+  background-color: #656565;
+  transform: rotateY(180deg);
+}
+
+.is-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+#container {
+    display: flex; 
+    align-items: flex-start; 
+}
+
+#textboxes {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; 
+}
+
+.textbox {
+    padding: 10px;
+    border: 5px solid #313131;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #656565;
+}
+
+#image {
+    max-width: 500px;
+    height: auto;
+}
+

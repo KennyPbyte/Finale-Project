@@ -1,0 +1,85 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 20px;
+    display: flex; /* Flexbox for side-by-side layout */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to top */
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+}
+#tier-selection {
+    flex: 1; /* Takes up available space */
+}
+.tier {
+    border: 1px solid #555;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+.tier:hover {
+    background-color: #333;
+    border-color: #aaa;
+}
+
+#paySection {
+    flex: 1; /* Takes up available space */
+    border: 1px solid #555;
+    padding: 20px;
+    border-radius: 5px;
+}
+legend {
+    color: white;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #222; /* Darker background for inputs */
+    color: white;
+}
+#footnote {
+    font-size: small;
+    color: #ccc;
+}
+#subButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#subButton:hover {
+    background-color: #0056b3;
+}
+#cards {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.cardLabel {
+    display: flex;
+    align-items: center;
+}
+.cardLabel span {
+    margin-left: 5px;
+}
+#total-display { /* Style for the total display area */
+    margin-top: 20px;
+    font-size: 1.2em;
+}

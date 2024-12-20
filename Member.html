@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberships</title>
+    <link href="Mem.css" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <a href="Member.html">Memberships</a> 
+    <a href="Pay.html">Join US</a>
+    <a href="Aboutus.html">About US</a>
+    </nav>
+
+    <h1>Tiers of Memebership</h1>
+
+    <div class="card-container">
+        <div class="card">
+        <div class="card-inner">
+        <div class="card-front"><h2>Core</h2></div>
+        <div class="card-back"><h2>Access to all Facilites</h2>
+                                <h2>$1200 Per Year</h2>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h2>Standard</h2>
+          </div>
+          <div class="card-back">
+            <h2>Access to all Facilites</h2>
+            <h2>10 Free Classes Per Month</h2>
+            <h2>$2000 Per Year</h2>
+          </div>
+        </div>
+      </div>
+    
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <h2>Premier</h2>
+          </div>
+          <div class="card-back">
+            <h2>Access to all Facilites</h2>
+            <h2>10 Free Classes Per Month</h2>
+            <h2>Access to Partner Facilities</h2>
+            <h2>$1oooo Per Year</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+     <script>
+        const cards = document.querySelectorAll('.card');
+    
+        cards.forEach(card => {
+            card.addEventListener('click', function(){
+            card.classList.toggle('is-flipped');
+            });
+        });
+      </script>
+
+<p>
+
+<div id="container">
+    <div id="textboxes">
+        <div class="textbox" data-image="YOGA.jpg">YOGA</div>
+        <div class="textbox" data-image="BASEBALL.jpg">BASEBALL</div>
+        <div class="textbox" data-image="JUDO.jpg">JUDO</div>
+    </div>
+    <img id="image" src="" alt="Selected Image">
+</div>
+
+<script>
+const textboxes = document.querySelectorAll('.textbox');
+const image = document.getElementById('image');
+
+textboxes.forEach(textbox => {
+    textbox.addEventListener('click', () => {
+        const imageSrc = textbox.dataset.image;
+        image.src = imageSrc;
+    });
+});
+</script>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0; 
+            padding: 0;
+            background-color: black;
+            color: silver;
+            font-size: 20px;
+        }
+
+        #map {
+            height: 400px; 
+            width: 100%;
+            margin-top: 20px;
+        }
+        .arrow {
+            position: relative;
+            top: -20px; 
+            left: 50%;
+            margin-left: -10px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 20px solid #333; 
+        }
+        .container {
+            padding: 20px;
+        }
+
+        
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: silver;
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  nav a {
+    display: block;
+    color: silver; 
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+  }
+
+  nav a:hover {
+    background-color: #555; 
+  }
+
+  h1{
+    text-align: center;
+    color: silver;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+  }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="Member.html">Memberships</a> 
+        <a href="Pay.html">Join US</a>
+    </nav>
+
+    <div class="container">
+        <h1>About Us</h1>
+
+        <p>This is Zen!</p>
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12634.999999999998!2d-73.98510700000001!3d40.758896000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9692831a1%3A0x44ba44d57a92290f!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1701389422316!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+\
+        </div>
+    </div>
+
+</body>
+</html>
